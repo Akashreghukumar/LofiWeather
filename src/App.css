@@ -1,38 +1,164 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rajdhani:wght@300;400;500;600&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-family: 'Rajdhani', sans-serif;
+  /* background-image: url('../assets/winter2.jpg'); */
+  background-size: cover;
+  /* Adjust as needed */
+  background-repeat: no-repeat;
+  /* Prevent repetition */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  width: "100%";
+  height: "100%";
+  padding: 25px;
+  background-size: cover;
+  /* Adjust as needed */
+  background-repeat: no-repeat;
+  /* Prevent repetition */
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title {
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3{
+  font-size: 30px;
+}
+
+input{
+  width: 70%;
+  height: 40px;
+  border: 2.5px solid black;
+  border-radius: 15px;
+  font-size: 30px;
+  padding-left: 15px;
+}
+
+button{
+  height: 40px;
+  width: 30%;
+  background-color: black;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+}
+
+.mainContainer{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  gap:2rem ;
 }
 
-.App-link {
-  color: #61dafb;
+.weather-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+  width: 600px;
+  height: 300px;
+  padding: 25px;
+  background-size: cover;
+  /* Adjust as needed */
+  background-repeat: no-repeat;
+  /* Prevent repetition */
+  transition: background-image 0.5s ease;
+}
+
+/* Card content */
+.card-content {
+  color: #fff;
+  padding: 10px;
+}
+
+.app.winter,
+.card.winter {
+  background-image: url("../assets/winter2.jpg");
+  border-radius: 30px;
+}
+
+.card.winternight {
+  background-image: url("../assets//winternight.jpg");
+  border-radius: 30px;
+
+}
+
+.card.rainynight {
+  background-image: url("../assets/rainynight.jpg");
+  border-radius: 30px;
+}
+
+.card.clear {
+  background-image: url("../assets/clear.jpg");
+  border-radius: 30px;
+}
+
+.card.mist {
+  background-image: url("../assets/mist.jpg");
+  border-radius: 30px;
+}
+
+.card.cloud {
+  background-image: url("../assets/cloudy.jpg");
+  border-radius: 30px;
+}
+
+.card.default {
+  background-image: url("../assets/default.jpg");
+  border-radius: 30px;
+}
+
+.todolistContainer{
+  width: 600px;
+  padding: 25px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background: rgba(158, 237, 247, 0.07);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.4px);
+  -webkit-backdrop-filter: blur(4.4px);
+  border: 1px solid rgba(117, 234, 249, 0.09);
+}
+
+.inputContainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.todolistCard{
+  /* height: 40px; */
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: #fff;
+  padding: 0 20px 0 20px;
 }
